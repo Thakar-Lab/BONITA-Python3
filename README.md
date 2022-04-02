@@ -4,9 +4,9 @@ BONITA was originally written in Python 2 and tested with Python 2-compatible pa
 
 BONITA- Boolean Omics Network Invariant-Time Analysis is a package for the inference of Boolean rules and pathway analysis on omics data. It can be applied to help uncover underlying relationships in biological data. Please see our [publication](https://doi.org/10.1371/journal.pcbi.1007317) for more information. 
 
-Authors: _Rohith Palli (https://www.github.com/rpalli), Mukta G. Palshikar and Juilee Thakar_
+Authors: _Rohith Palli, Mukta G. Palshikar and Juilee Thakar_
 
-**BONITA ported to Python 3 by Mukta G. Palshikar (https://www.github.com/mgp13) and Jiayue Meng (https://www.github.com/jiayuemeng) **
+**BONITA ported to Python 3 by Mukta G. Palshikar and Jiayue Meng**
 
 **For a demonstration of the BONITA pipeline, see the tutorial in Tutorials/BONITA_pipeline_tutorial.md. The instructions in the current README file cover all anticipated use cases.**
 
@@ -27,7 +27,7 @@ Use a terminal, or an Anaconda Prompt for the following:
 
 1. Create a conda environment using the provided YML file
 
-```conda env create –name BONITA --file platform_BONITA.yaml```
+```conda env create –name=BONITA --file platform_BONITA.yaml```
 
 2. Activate the BONITA environment
 
@@ -78,30 +78,30 @@ There are three ways to complete this process:
 
 BONITA needs omics data, gmt file, and an indication of what character is used to separate columns in the file. For example, a traditional comma separated value file (csv) would need BONITA input "-sep ,". Since tab can't be passed in as easily, a -t command will automatically flag tab as the separator. The commands are below:
 
-comma separated: ```python pathway_analysis_setup.py -gmt Your_gmt_file -sep , Your_omics_data ```
+comma separated: ```python pathway_analysis_setup.py -gmt Your_gmt_file -sep , --data Your_omics_data ```
 
-tab separated: ```python pathway_analysis_setup.py -t  -gmt Your_gmt_file Your_omics_data```
+tab separated: ```python pathway_analysis_setup.py -t  -gmt Your_gmt_file --data Your_omics_data```
 
 ### Option 2: On all KEGG pathways for any organism
 
 BONITA needs omics data, organism code, and an indication of what character is used to separate columns in the file. For example, a traditional comma separated value file (csv) would need BONITA input "-sep ,". Since tab can't be passed in as easily, a -t command will automatically flag tab as the separator. A three letter organism code from KEGG must be provided (lower case). Example codes include mmu for mouse and hsa for human. The commands are below:
-comma separated: ```python pathway_analysis_setup.py -org Your_org_code -sep , Your_omics_data ```
+comma separated: ```python pathway_analysis_setup.py -org Your_org_code -sep , --data Your_omics_data ```
 
-comma separated, human: ```python pathway_analysis_setup.py -org hsa -sep , Your_omics_data ```
+comma separated, human: ```python pathway_analysis_setup.py -org hsa -sep , --data Your_omics_data ```
 
-comma separated, mouse: ```python pathway_analysis_setup.py -org mmu -sep , Your_omics_data ```
+comma separated, mouse: ```python pathway_analysis_setup.py -org mmu -sep , --data Your_omics_data ```
 
-tab separated: ```python pathway_analysis_setup.py -t  -org Your_org_code Your_omics_data```
+tab separated: ```python pathway_analysis_setup.py -t  -org Your_org_code --data Your_omics_data```
 
 ### Option 3: On a list of KEGG pathways for any organism
 BONITA needs omics data, organism code, the list of pathways, and an indication of what character is used to separate columns in the file. For example, a traditional comma separated value file (csv) would need BONITA input "-sep ,". Since tab can't be passed in as easily, a -t command will automatically flag tab as the separator. A three letter organism code from KEGG must be provided (lower case). Example codes include mmu for mouse and hsa for human. The list of pathways must include the 5 digit pathway identifier, must be seperated by commas, and must not include any other numbers. An example paths.txt is included in the inputData folder. The commands are below:
-comma separated: `python pathway_analysis_setup.py -org Your_org_code -sep , -paths Your_pathway_list Your_omics_data `
+comma separated: `python pathway_analysis_setup.py -org Your_org_code -sep , -paths Your_pathway_list --data Your_omics_data `
 
-comma separated, human: ```python pathway_analysis_setup.py -org hsa -sep , -paths Your_pathway_list Your_omics_data ```
+comma separated, human: ```python pathway_analysis_setup.py -org hsa -sep , -paths Your_pathway_list --data Your_omics_data ```
 
-comma separated, mouse: ```python pathway_analysis_setup.py -org mmu -sep , -paths Your_pathway_list Your_omics_data ```
+comma separated, mouse: ```python pathway_analysis_setup.py -org mmu -sep , -paths Your_pathway_list --data Your_omics_data ```
 
-tab separated: ```python pathway_analysis_setup.py -t  -org Your_org_code -paths Your_pathway_list Your_omics_data```
+tab separated: ```python pathway_analysis_setup.py -t  -org Your_org_code -paths Your_pathway_list --data Your_omics_data```
 
 ## Step 2: Rule inference
 
