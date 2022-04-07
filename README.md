@@ -1,6 +1,6 @@
 # BONITA-Python3
 
-BONITA was originally written in Python 2 and tested with Python 2-compatible packages. This version of the packages ports BONITA to Python 3. Functionality remains the same. However, we refer users to the original release to reproduce figures from the BONITA paper. 
+BONITA was originally written in Python 2 and tested with Python 2-compatible packages. This version of the packages ports BONITA to Python 3 and has significant improvements in speed. We encourage users to use this actively-maintained version of the package going forward. 
 
 BONITA- Boolean Omics Network Invariant-Time Analysis is a package for the inference of Boolean rules and pathway analysis on omics data. It can be applied to help uncover underlying relationships in biological data. Please see our [publication](https://doi.org/10.1371/journal.pcbi.1007317) for more information. 
 
