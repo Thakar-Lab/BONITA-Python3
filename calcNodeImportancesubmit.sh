@@ -10,4 +10,4 @@
 module load anaconda3/2020.11
 activate BONITA
 python pathway_analysis_score_nodes.py $1 $SLURM_ARRAY_TASK_ID
-echo "ran GA"
+echo "BONITA complete"
