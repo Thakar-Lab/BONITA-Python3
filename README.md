@@ -6,7 +6,7 @@ BONITA- Boolean Omics Network Invariant-Time Analysis is a package for the infer
 
 Authors: _[Rohith Palli](https://github.com/rpalli), [Mukta G. Palshikar](https://github.com/mgp13) and Juilee Thakar_
 
-**BONITA ported to Python 3 by [Mukta G. Palshikar](https://github.com/mgp13) and [Jiayue Meng](https://github.com/JiayueMeng)**
+**BONITA ported to Python 3 by [Mukta G. Palshikar](https://github.com/muktpalshikar) and [Jiayue Meng](https://github.com/JiayueMeng)**
 
 **For a demonstration of the BONITA pipeline, see the tutorial in Tutorials/BONITA_pipeline_tutorial.md. The instructions in the current README file cover all anticipated use cases.**
 
