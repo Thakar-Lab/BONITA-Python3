@@ -27,7 +27,7 @@ Use a terminal, or an Anaconda Prompt for the following:
 
 1. Create a conda environment using the provided YML file
 
-```conda env create –name=BONITA --file platform_BONITA.yaml```
+```conda env create -–name=BONITA --file platform_BONITA.yaml```
 
 2. Activate the BONITA environment
 
